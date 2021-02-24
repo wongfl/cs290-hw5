@@ -1,0 +1,45 @@
+<h1>HW5: GET and POST checker</h1>
+
+<h1 style="color:blue">{{getHeading}}</h1>
+<h3>URL query string via GET Request<h3>
+<table style="width:50%" border="1px solid black"><tbody>
+  <tr>
+    <th>Parameter names</th>
+    <th>Values</th>
+  </tr>
+  {{#each getDataList}}
+  <tr>
+    <td>{{this.name}}</td>
+    <td>{{this.value}}</td>
+  </tr>
+  {{/each}}
+</tbody></table>
+
+<h1 style="color:blue">{{postHeading}}</h1>
+<h3>URL query string via POST Request<h3>
+<table style="width:50%" border="1px solid black"><tbody>
+  <tr>
+    <th>Parameter names</th>
+    <th>Values</th>
+  </tr>
+  {{#each postJsonList}}
+  <tr>
+    <td>{{this.name}}</td>
+    <td>{{this.value}}</td>
+  </tr>
+  {{/each}}
+</tbody></table>
+<br>
+<h3>JSON data via POST Request<h3>
+<table style="width:50%" border="1px solid black"><tbody>
+  <tr>
+    <th>Parameter names</th>
+    <th>Values</th>
+  </tr>
+  {{#each postDataList}}
+  <tr>
+    <td>{{this.name}}</td>
+    <td>{{this.value}}</td>
+  </tr>
+  {{/each}}
+</tbody></table>
